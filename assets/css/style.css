@@ -1,0 +1,29 @@
+a{
+    color: inherit;
+}
+.form-control:focus { 
+    box-shadow: 1px 1px 0 1px #A0DEFF;
+}
+.brands-icon{
+    font-size: 25px;
+    border: 30px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: #4D869C;
+    color: white;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.brands-icon:hover{
+    background-color: #343A40;
+}
+.closeBtn {
+    display: none;
+    position: absolute;
+    right: 50px; 
+}

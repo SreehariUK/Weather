@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Weather API</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/imgs/favicon.png" type="image/x-icon">
+    <!-- BootStrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="assets/css/Fontawesome.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-bs-theme="dark" class="d-flex flex-column min-vh-100">
+    <!-- Start Navbar -->
+    <nav class="navbar bg-body-tertiary sticky-lg-top">
+        <div class="container">
+            <span class="navbar-brand m-auto"><img src="assets/imgs/logo.png" class="me-2 w-25 mb-1" alt="">Weather</span>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <main class="main-content container py-5 text-center px-4 flex-grow-1">
+        <h1 class="d-inline-block border-3 border-bottom mb-4 display-1">Weather App</h1>
+    <!-- Start Search Input -->
+        <div class="d-flex justify-content-center align-items-center gap-3 position-relative w-auto m-auto">
+            <div class="form-floating w-75">
+                <input type="text" class="form-control rounded-5 ps-3" id="documentSearchInput" placeholder="Find Your location ... ">  
+                <label for="floatingInput" class="ps-3">Find Your location ... </label>
+            </div>
+            <button class="brands-icon closeBtn fs-5"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    <!-- End Search Input -->
+    <!-- Start Cards -->
+    <div class="row pt-5 justify-content-center gap-5">
+        <!-- !Start Today Card -->
+        <div class="Today-card mt-3 p-2 border-0 rounded-4 " id="TodayCard" style="width: 25rem; height: 25rem;">
+        </div>
+        <!-- !End Today Card -->
+        <!--! Start Tomorrow Card -->
+        <div class="Tomorrow-card mt-3 p-2 border-0 rounded-4 " id="TomorrowCard" style="width: 25rem; height: 25rem;">
+        </div>
+        <!-- !End Tomorrow Card -->
+        <!--! Start After Tomorrow Card -->
+        <div class="afterTomorrow-card mt-3 p-2 border-0 rounded-4 " id="afterTomorrowCard" style="width: 25rem; height: 25rem;">
+        </div>
+        <!-- End After Tomorrow Card -->
+    </div>
+    <!-- End Cards -->
+    </main>
+
+    <!-- ! ******************* JS ******************* -->
+    <!-- BootStrap JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Jquery JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
